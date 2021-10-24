@@ -121,23 +121,6 @@ body {
 	color: rgba(255,206,25,1);
 	background-color:transparent;
 }
-
-#Shopping_Cart_Counter {
-	left: 1788px;
-	top: -1px;
-	position: absolute;
-	overflow: visible;
-	width: 118px;
-	height: 37px;
-	line-height: 34px;
-	margin-top: -2px;
-	text-align: right;
-	font-family: Lato;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 20px;
-	color: rgba(255,206,25,1);
-}
 /* HEADER */
 
 
@@ -446,12 +429,12 @@ body {
 	float: right;
 }
 
-#Glazing {
+#Quantity {
 	position: absolute;
 	width: 508px;
 	height: 53px;
 	left: 0px;
-	top: 0px;
+	top: 98px;
 	padding-left: 16px;
 	overflow: visible;
 	line-height: 34px;
@@ -466,12 +449,12 @@ body {
 	border-radius:10px;
 }
 
-#Quantity {
+#Glazing {
 	position: absolute;
 	width: 508px;
 	height: 53px;
 	left: 0px;
-	top: 98px;
+	top: 0px;
 	padding-left: 16px;
 	overflow: visible;
 	line-height: 34px;
@@ -500,75 +483,8 @@ body {
 	font-style: normal;
 	font-weight: normal;
 	font-size: 30px;
-	color: rgb(9, 179, 153);
+	color: rgb(255, 255, 255);
 	background-color: rgba(25,219,219,1);
 	border-radius:10px;
 }
 /* PRODUCT BUTTONS */
-
-
-
-/* ITEM BUBBLE */
-#productBubble {
-	display: none;
-	position: sticky;
-	width: 508px;
-	height: 178px;
-	left: 1390px;
-	top: 75px;
-	overflow: visible;
-}
-
-.bubble {
-	position: absolute;
-	overflow: visible;
-	width: 508px;
-	height: 178px;
-	left: 0px;
-	top: 97px;
-}
-
-#Rectangle_3 {
-	fill:  rgba(254,250,233);
-	stroke: rgba(255,206,24,1);
-	stroke-width: 10px;
-	stroke-linejoin: miter;
-	stroke-linecap: butt;
-	stroke-miterlimit: 4;
-	shape-rendering: auto;
-}
-
-#bubbleText {
-	left: 20px;
-	top: 117px;
-	position: absolute;
-	overflow: visible;
-	width: 429px;
-	height: 138px;
-	line-height: 34px;
-	margin-top: -2px;
-	text-align: left;
-	font-family: Lato;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 30px;
-	color: rgba(178,18,178,1);
-}
-
-#Remove_Icon {
-	left: 452px;
-	top: 117px;
-	position: absolute;
-	overflow: visible;
-	width: 36px;
-	height: 36px;
-	line-height: 34px;
-	margin-top: -2px;
-	text-align: right;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 30px;
-	color: rgba(255,206,25,1);
-	background-color:transparent;
-}
-/* ITEM BUBBLE */

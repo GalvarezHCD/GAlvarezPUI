@@ -4,10 +4,9 @@
 <meta charset="utf-8"/>
 <title>Bun Bun Bake Shop</title>
 <link rel="stylesheet" type="text/css" href="Bun_Bun_Bake_Shop.css"/>
-<script type="text/javascript" src="Bun_Bun_Bake_Shop.js"></script>
 </head>
 
-<body onload="onLoad()">
+<body>
 <div id="Header" class="Header">
 	<svg class="Rectangle_1">
 		<rect id="Rectangle_1" rx="0" ry="0" x="0" y="0" width="1920" height="75"></rect>
@@ -16,19 +15,7 @@
 	<button id="Home_Header" type="button">Home</button>
 	<button id="About" type="button">About</button>	
 	<button id="Contact" type="button">Contact</button>	
-	<img id="Shopping_Cart" src="Shopping_Cart.png">
-	<div id="Shopping_Cart_Counter">
-		<span id="Shopping_Cart_Number" style="vertical-align:super;">0</span>
-	</div>	
-	<div id="productBubble">
-		<svg class="bubble">
-			<rect id="Rectangle_3" rx="30" ry="30" x="0" y="0" width="508" height="178"></rect>
-		</svg>
-		<div id="bubbleText">
-			<span id="Name">Name</span><br/><span id="Price_Glazing_Quantity" style="font-style:normal;font-weight:normal;">$2.75<br/>Glazing<br/>Qty: Quantity</span>
-		</div>
-		<img id="Remove_Icon" src="Remove_Icon.png">
-	</div>	
+	<img id="Shopping_Cart" src="Shopping_Cart.png">		
 </div>
 
 <div id="FAB_Menu">
@@ -68,31 +55,15 @@
 		</div>
 		<img id="Page_Image" alt="blackberry roll image" src="cinnamon.png">
 		<div id="Buttons_Product" class="Buttons_Product">
-			<div>
-				<select id="Glazing" onchange="glazingInput(event)">
-					<option href="#">Glazing</option>
-					<option href="#">None</option>
-					<option href="#">Sugar Milk</option>
-					<option href="#">Vanilla Milk</option>
-					<option href="#">Double Chocolate</option>
-				</select>
-			</div>
-			<div>
-				<select id="Quantity" onchange="quantityInput(event)">
-					<option href="#">Quantity</option>
-					<option href="#">1</option>
-					<option href="#">3</option>
-					<option href="#">6</option>
-					<option href="#">12</option>
-				</select>
-			</div>
-			<button onclick="addToBasket('Blackberry','$2.75')" onmouseover="addToBasket_Hover()" onmouseout="mouseOff()" id="Add_Basket" type="button">Add to Basket</button>
+			<button id="Quantity" type="button">Quantity<span class="Buttons_Arrow">&#xFE40;</span></button>
+			<button id="Glazing" type="button">Glazing<span class="Buttons_Arrow">&#xFE40;</span></button>
+			<button id="Add_Basket" type="button">Add to Basket</button>
 		</div>
 	</div>
 	<!-- BLACKBERRY -->
 
 	<!-- CARAMEL -->
-	<!-- <div id="Caramel_Page">
+	<div id="Caramel_Page">
 		<div id="Heading">
 			<div id="Title"><p>Caramel Pecan<br/>$2.75</p></div>
 			<svg class="Ruler" viewBox="0 0 808 10">
@@ -106,31 +77,15 @@
 		</div>
 		<img id="Page_Image" alt="caramel roll image" src="caramel.png">
 		<div id="Buttons_Product" class="Buttons_Product">
-			<div>
-				<select id="Glazing" onchange="glazingInput(event)">
-					<option href="#">Glazing</option>
-					<option href="#">None</option>
-					<option href="#">Sugar Milk</option>
-					<option href="#">Vanilla Milk</option>
-					<option href="#">Double Chocolate</option>
-				</select>
-			</div>
-			<div>
-				<select id="Quantity" onchange="quantityInput(event)">
-					<option href="#">Quantity</option>
-					<option href="#">1</option>
-					<option href="#">3</option>
-					<option href="#">6</option>
-					<option href="#">12</option>
-				</select>
-			</div>
-			<button onclick="addToBasket('Blackberry','$2.75')" onmouseover="addToBasket_Hover()" onmouseout="mouseOff()" id="Add_Basket" type="button">Add to Basket</button>
+			<button id="Quantity" type="button">Quantity<span class="Buttons_Arrow">&#xFE40;</span></button>
+			<button id="Glazing" type="button">Glazing<span class="Buttons_Arrow">&#xFE40;</span></button>
+			<button id="Add_Basket" type="button">Add to Basket</button>
 		</div>
-	</div> -->
+	</div>
 	<!-- CARAMEL -->
 
 	<!-- ORIGINAL -->
-	<!-- <div id="Original_Page">
+	<div id="Original_Page">
 		<div id="Heading">
 			<div id="Title"><p>Original<br/>$2.75</p></div>
 			<svg class="Ruler" viewBox="0 0 808 10">
@@ -148,11 +103,11 @@
 			<button id="Glazing" type="button">Glazing<span class="Buttons_Arrow">&#xFE40;</span></button>
 			<button id="Add_Basket" type="button">Add to Basket</button>
 		</div>
-	</div> -->
+	</div>
 	<!-- ORIGINAL -->
 
 	<!-- ORIGINAL GLUTEN FREE -->
-	<!-- <div id="Original_GF_Page">
+	<div id="Original_GF_Page">
 		<div id="Heading">
 			<div id="Title"><p>Original<br/>$2.75</p></div><div id="Title_Small"><p>- Gluten Free</p></div>
 			<svg class="Ruler" viewBox="0 0 808 10">
@@ -170,11 +125,11 @@
 			<button id="Glazing" type="button">Glazing<span class="Buttons_Arrow">&#xFE40;</span></button>
 			<button id="Add_Basket" type="button">Add to Basket</button>
 		</div>
-	</div> -->
+	</div>
 	<!-- ORIGINAL GLUTEN FREE -->
 
 	<!-- PUMPKIN SPICE -->
-	<!-- <div id="Pumpkin_Page">
+	<div id="Pumpkin_Page">
 		<div id="Heading">
 			<div id="Title"><p>Pumpkin Spice<br/>$2.75</p></div>
 			<svg class="Ruler" viewBox="0 0 808 10">
@@ -192,11 +147,11 @@
 			<button id="Glazing" type="button">Glazing<span class="Buttons_Arrow">&#xFE40;</span></button>
 			<button id="Add_Basket" type="button">Add to Basket</button>
 		</div>
-	</div> -->
+	</div>
 	<!-- PUMPKIN SPICE -->
 
 	<!-- WALNUT -->
-	<!-- <div id="Walnut_Page">
+	<div id="Walnut_Page">
 		<div id="Heading">
 			<div id="Title"><p>Walnut<br/>$2.75</p></div>
 			<svg class="Ruler" viewBox="0 0 808 10">
@@ -214,7 +169,7 @@
 			<button id="Glazing" type="button">Glazing<span class="Buttons_Arrow">&#xFE40;</span></button>
 			<button id="Add_Basket" type="button">Add to Basket</button>
 		</div>
-	</div> -->
+	</div>
 	<!-- WALNUT -->
 </div>
 
