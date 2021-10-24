@@ -6,6 +6,10 @@
 <link rel="stylesheet" type="text/css" href="Bun_Bun_Bake_Shop.css"/>
 <script type="text/javascript" src="Blackberry.js"></script>
 <script type="text/javascript" src="Caramel.js"></script>
+<script type="text/javascript" src="Original.js"></script>
+<script type="text/javascript" src="Original_GF.js"></script>
+<script type="text/javascript" src="Pumpkin.js"></script>
+<script type="text/javascript" src="Walnut.js"></script>
 </head>
 
 <body onload="onLoad()">
@@ -131,91 +135,156 @@
 	<!-- CARAMEL -->
 
 	<!-- ORIGINAL -->
-	<!-- <div id="Original_Page">
-		<div id="Heading">
-			<div id="Title"><p>Original<br/>$2.75</p></div>
+	<div id="Original_Page">
+		<div id="Original_Heading">
+			<div id="Original_Title"><p>Original<br/>$2.75</p></div>
+			<!-- <div id="Original_GF_Title"><p>Original<br/>$2.75</p></div><div id="Title_Small"><p>- Gluten Free</p></div> -->
 			<svg class="Ruler" viewBox="0 0 808 10">
-				<path id="Ruler" d="M 808 0 L 0 0"></path>
+				<path id="Original_Ruler" d="M 808 0 L 0 0"></path>
 			</svg>
 		</div>
-		<div id="Body_Text">
-			<div id="Paragraph">
+		<div id="Original_Body_Text">
+			<div id="Original_Paragraph">
 				<p>Baking can be done with a few simple ingredients, so it’s about simplicity and nostalgia - people are reminded of their childhood.</p>
 			</div>
 		</div>
-		<img id="Page_Image" alt="original roll image" src="original.png">
-		<div id="Buttons_Product" class="Buttons_Product">
-			<button id="Quantity" type="button">Quantity<span class="Buttons_Arrow">&#xFE40;</span></button>
-			<button id="Glazing" type="button">Glazing<span class="Buttons_Arrow">&#xFE40;</span></button>
-			<button id="Add_Basket" type="button">Add to Basket</button>
+		<img id="Original_Page_Image" alt="original roll image" src="original.png">
+		<div id="Original_Buttons_Product" class="Buttons_Product">
+			<div>
+				<select id="Original_Glazing" onchange="original_glazingInput(event)">
+					<option href="#">Glazing</option>
+					<option href="#">None</option>
+					<option href="#">Sugar Milk</option>
+					<option href="#">Vanilla Milk</option>
+					<option href="#">Double Chocolate</option>
+				</select>
+			</div>
+			<div>
+				<select id="Original_Quantity" onchange="original_quantityInput(event)">
+					<option href="#">Quantity</option>
+					<option href="#">1</option>
+					<option href="#">3</option>
+					<option href="#">6</option>
+					<option href="#">12</option>
+				</select>
+			</div>
+			<button onclick="original_addToBasket('Original','$2.75')" onmouseover="original_addToBasket_Hover()" onmouseout="original_mouseOff()" id="Original_Add_Basket" type="button">Add to Basket</button>
 		</div>
-	</div> -->
+	</div>
 	<!-- ORIGINAL -->
 
 	<!-- ORIGINAL GLUTEN FREE -->
-	<!-- <div id="Original_GF_Page">
-		<div id="Heading">
-			<div id="Title"><p>Original<br/>$2.75</p></div><div id="Title_Small"><p>- Gluten Free</p></div>
+	<div id="Original_GF_Page">
+		<div id="Original_GF_Heading">
+			<div id="Original_GF_Title"><p>Original<br/>$2.75</p></div><div id="Title_Small"><p>- Gluten Free</p></div>
 			<svg class="Ruler" viewBox="0 0 808 10">
-				<path id="Ruler" d="M 808 0 L 0 0"></path>
+				<path id="Original_GF_Ruler" d="M 808 0 L 0 0"></path>
 			</svg>
 		</div>
-		<div id="Body_Text">
-			<div id="Paragraph">
+		<div id="Original_GF_Body_Text">
+			<div id="Original_GF_Paragraph">
 				<p>Baking can be done with a few simple ingredients, so it’s about simplicity and nostalgia - people are reminded of their childhood.</p>
 			</div>
 		</div>
-		<img id="Page_Image" alt="original gluten free roll image" src="original_gf.png">
-		<div id="Buttons_Product" class="Buttons_Product">
-			<button id="Quantity" type="button">Quantity<span class="Buttons_Arrow">&#xFE40;</span></button>
-			<button id="Glazing" type="button">Glazing<span class="Buttons_Arrow">&#xFE40;</span></button>
-			<button id="Add_Basket" type="button">Add to Basket</button>
+		<img id="Original_GF_Page_Image" alt="original_GF roll image" src="original_GF.png">
+		<div id="Original_GF_Buttons_Product" class="Buttons_Product">
+			<div>
+				<select id="Original_GF_Glazing" onchange="original_GF_glazingInput(event)">
+					<option href="#">Glazing</option>
+					<option href="#">None</option>
+					<option href="#">Sugar Milk</option>
+					<option href="#">Vanilla Milk</option>
+					<option href="#">Double Chocolate</option>
+				</select>
+			</div>
+			<div>
+				<select id="Original_GF_Quantity" onchange="original_GF_quantityInput(event)">
+					<option href="#">Quantity</option>
+					<option href="#">1</option>
+					<option href="#">3</option>
+					<option href="#">6</option>
+					<option href="#">12</option>
+				</select>
+			</div>
+			<button onclick="original_GF_addToBasket('Original_GF','$2.75')" onmouseover="original_GF_addToBasket_Hover()" onmouseout="original_GF_mouseOff()" id="Original_GF_Add_Basket" type="button">Add to Basket</button>
 		</div>
-	</div> -->
+	</div>
 	<!-- ORIGINAL GLUTEN FREE -->
 
 	<!-- PUMPKIN SPICE -->
-	<!-- <div id="Pumpkin_Page">
-		<div id="Heading">
-			<div id="Title"><p>Pumpkin Spice<br/>$2.75</p></div>
+	<div id="Pumpkin_Page">
+		<div id="Pumpkin_Heading">
+			<div id="Pumpkin_Title"><p>Pumpkin Spice<br/>$2.75</p></div>
 			<svg class="Ruler" viewBox="0 0 808 10">
-				<path id="Ruler" d="M 808 0 L 0 0"></path>
+				<path id="Pumpkin_Ruler" d="M 808 0 L 0 0"></path>
 			</svg>
 		</div>
-		<div id="Body_Text">
-			<div id="Paragraph">
+		<div id="Pumpkin_Body_Text">
+			<div id="Pumpkin_Paragraph">
 				<p>Baking can be done with a few simple ingredients, so it’s about simplicity and nostalgia - people are reminded of their childhood.</p>
 			</div>
 		</div>
-		<img id="Page_Image" alt="pumpkin roll image" src="pumpkin.png">
-		<div id="Buttons_Product" class="Buttons_Product">
-			<button id="Quantity" type="button">Quantity<span class="Buttons_Arrow">&#xFE40;</span></button>
-			<button id="Glazing" type="button">Glazing<span class="Buttons_Arrow">&#xFE40;</span></button>
-			<button id="Add_Basket" type="button">Add to Basket</button>
+		<img id="Pumpkin_Page_Image" alt="pumpkin roll image" src="pumpkin.png">
+		<div id="Pumpkin_Buttons_Product" class="Buttons_Product">
+			<div>
+				<select id="Pumpkin_Glazing" onchange="pumpkin_glazingInput(event)">
+					<option href="#">Glazing</option>
+					<option href="#">None</option>
+					<option href="#">Sugar Milk</option>
+					<option href="#">Vanilla Milk</option>
+					<option href="#">Double Chocolate</option>
+				</select>
+			</div>
+			<div>
+				<select id="Pumpkin_Quantity" onchange="pumpkin_quantityInput(event)">
+					<option href="#">Quantity</option>
+					<option href="#">1</option>
+					<option href="#">3</option>
+					<option href="#">6</option>
+					<option href="#">12</option>
+				</select>
+			</div>
+			<button onclick="pumpkin_addToBasket('Pumpkin','$2.75')" onmouseover="pumpkin_addToBasket_Hover()" onmouseout="pumpkin_mouseOff()" id="Pumpkin_Add_Basket" type="button">Add to Basket</button>
 		</div>
-	</div> -->
+	</div>
 	<!-- PUMPKIN SPICE -->
 
 	<!-- WALNUT -->
-	<!-- <div id="Walnut_Page">
-		<div id="Heading">
-			<div id="Title"><p>Walnut<br/>$2.75</p></div>
+	<div id="Walnut_Page">
+		<div id="Walnut_Heading">
+			<div id="Walnut_Title"><p>Walnut<br/>$2.75</p></div>
 			<svg class="Ruler" viewBox="0 0 808 10">
-				<path id="Ruler" d="M 808 0 L 0 0"></path>
+				<path id="Walnut_Ruler" d="M 808 0 L 0 0"></path>
 			</svg>
 		</div>
-		<div id="Body_Text">
-			<div id="Paragraph">
+		<div id="Walnut_Body_Text">
+			<div id="Walnut_Paragraph">
 				<p>Baking can be done with a few simple ingredients, so it’s about simplicity and nostalgia - people are reminded of their childhood.</p>
 			</div>
 		</div>
-		<img id="Page_Image" alt="walnut roll image" src="walnut.png">
-		<div id="Buttons_Product" class="Buttons_Product">
-			<button id="Quantity" type="button">Quantity<span class="Buttons_Arrow">&#xFE40;</span></button>
-			<button id="Glazing" type="button">Glazing<span class="Buttons_Arrow">&#xFE40;</span></button>
-			<button id="Add_Basket" type="button">Add to Basket</button>
+		<img id="Walnut_Page_Image" alt="walnut roll image" src="walnut.png">
+		<div id="Walnut_Buttons_Product" class="Buttons_Product">
+			<div>
+				<select id="Walnut_Glazing" onchange="walnut_glazingInput(event)">
+					<option href="#">Glazing</option>
+					<option href="#">None</option>
+					<option href="#">Sugar Milk</option>
+					<option href="#">Vanilla Milk</option>
+					<option href="#">Double Chocolate</option>
+				</select>
+			</div>
+			<div>
+				<select id="Walnut_Quantity" onchange="walnut_quantityInput(event)">
+					<option href="#">Quantity</option>
+					<option href="#">1</option>
+					<option href="#">3</option>
+					<option href="#">6</option>
+					<option href="#">12</option>
+				</select>
+			</div>
+			<button onclick="walnut_addToBasket('Walnut','$2.75')" onmouseover="walnut_addToBasket_Hover()" onmouseout="walnut_mouseOff()" id="Walnut_Add_Basket" type="button">Add to Basket</button>
 		</div>
-	</div> -->
+	</div>
 	<!-- WALNUT -->
 </div>
 

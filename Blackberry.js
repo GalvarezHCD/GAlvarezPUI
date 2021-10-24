@@ -63,8 +63,7 @@ function addToBasket(name,price) {
 }
 
 function reset () {
-    console.log('Gabriel');
-        document.getElementById ("Add_Basket").style.color = 'rgb(9, 179, 153';
+        document.getElementById ("Add_Basket").style.color = 'rgb(9, 179, 153)';
     }
 
 function Shopping_Cart_Number (count) {
