@@ -4,7 +4,8 @@
 <meta charset="utf-8"/>
 <title>Bun Bun Bake Shop</title>
 <link rel="stylesheet" type="text/css" href="Bun_Bun_Bake_Shop.css"/>
-<script type="text/javascript" src="Bun_Bun_Bake_Shop.js"></script>
+<script type="text/javascript" src="Blackberry.js"></script>
+<script type="text/javascript" src="Caramel.js"></script>
 </head>
 
 <body onload="onLoad()">
@@ -92,22 +93,22 @@
 	<!-- BLACKBERRY -->
 
 	<!-- CARAMEL -->
-	<!-- <div id="Caramel_Page">
-		<div id="Heading">
-			<div id="Title"><p>Caramel Pecan<br/>$2.75</p></div>
+	<div id="Caramel_Page">
+		<div id="Caramel_Heading">
+			<div id="Caramel_Title"><p>Caramel Pecan<br/>$2.75</p></div>
 			<svg class="Ruler" viewBox="0 0 808 10">
-				<path id="Ruler" d="M 808 0 L 0 0"></path>
+				<path id="Caramel_Ruler" d="M 808 0 L 0 0"></path>
 			</svg>
 		</div>
-		<div id="Body_Text">
-			<div id="Paragraph">
+		<div id="Caramel_Body_Text">
+			<div id="Caramel_Paragraph">
 				<p>Baking can be done with a few simple ingredients, so it’s about simplicity and nostalgia - people are reminded of their childhood.</p>
 			</div>
 		</div>
-		<img id="Page_Image" alt="caramel roll image" src="caramel.png">
-		<div id="Buttons_Product" class="Buttons_Product">
+		<img id="Caramel_Page_Image" alt="caramel roll image" src="caramel.png">
+		<div id="Caramel_Buttons_Product" class="Buttons_Product">
 			<div>
-				<select id="Glazing" onchange="glazingInput(event)">
+				<select id="Caramel_Glazing" onchange="caramel_glazingInput(event)">
 					<option href="#">Glazing</option>
 					<option href="#">None</option>
 					<option href="#">Sugar Milk</option>
@@ -116,7 +117,7 @@
 				</select>
 			</div>
 			<div>
-				<select id="Quantity" onchange="quantityInput(event)">
+				<select id="Caramel_Quantity" onchange="caramel_quantityInput(event)">
 					<option href="#">Quantity</option>
 					<option href="#">1</option>
 					<option href="#">3</option>
@@ -124,9 +125,9 @@
 					<option href="#">12</option>
 				</select>
 			</div>
-			<button onclick="addToBasket('Blackberry','$2.75')" onmouseover="addToBasket_Hover()" onmouseout="mouseOff()" id="Add_Basket" type="button">Add to Basket</button>
+			<button onclick="caramel_addToBasket('Caramel','$2.75')" onmouseover="caramel_addToBasket_Hover()" onmouseout="caramel_mouseOff()" id="Caramel_Add_Basket" type="button">Add to Basket</button>
 		</div>
-	</div> -->
+	</div>
 	<!-- CARAMEL -->
 
 	<!-- ORIGINAL -->

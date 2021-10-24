@@ -152,7 +152,8 @@ body {
 	overflow: scroll;
 }
 
-#Heading {
+/* hey, look at this nice comma */
+#Heading, #Caramel_Heading, #Original_Heading{
 	position: absolute;
 	width: 808px;
 	height: 223px;
@@ -161,7 +162,7 @@ body {
 	overflow: visible;
 }
 
-#Title {
+#Title, #Caramel_Title, #Original_Title{
 	left: 4.5px;
 	top: 0px;
 	position: absolute;
@@ -197,7 +198,7 @@ body {
 	text-shadow: -2.5px 2.5px rgba(255,206,25,1);
 }
 
-#Ruler {
+#Ruler, #Caramel_Ruler, #Original_Ruler{
 	fill: transparent;
 	stroke: rgba(255,206,25,1);
 	stroke-width: 10px;
@@ -216,7 +217,7 @@ body {
 	transform: matrix(1,0,0,1,0,0);
 }
 
-#Page_Image {
+#Page_Image, #Caramel_Page_Image, #Original_Page_Image{
 	filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
 	position: absolute;
 	width: 782px;
@@ -243,7 +244,7 @@ body {
 	color: rgba(9,179,153,1);
 }
 
-#Body_Text {
+#Body_Text, #Caramel_Body_Text, #Original_Body_Text{
 	position: absolute;
 	width: 782px;
 	height: 250px;
@@ -252,7 +253,7 @@ body {
 	overflow: visible;
 }
 
-#Paragraph {
+#Paragraph, #Caramel_Paragraph, #Original_Paragraph{
 	left: 2px;
 	top: 0px;
 	position: absolute;
@@ -430,7 +431,7 @@ body {
 
 
 /* PRODUCT BUTTONS */
-#Buttons_Product {
+#Buttons_Product, #Caramel_Buttons_Product, #Original_Buttons_Product {
 	position: absolute;
 	width: 508px;
 	height: 249px;
@@ -446,7 +447,7 @@ body {
 	float: right;
 }
 
-#Glazing {
+#Glazing, #Caramel_Glazing, #Original_Glazing {
 	position: absolute;
 	width: 508px;
 	height: 53px;
@@ -466,7 +467,7 @@ body {
 	border-radius:10px;
 }
 
-#Quantity {
+#Quantity, #Caramel_Quantity, #Original_Quantity{
 	position: absolute;
 	width: 508px;
 	height: 53px;
@@ -486,7 +487,7 @@ body {
 	border-radius:10px;
 }
 
-#Add_Basket {
+#Add_Basket, #Caramel_Add_Basket, #Original_Add_Basket {
 	position: absolute;
 	width: 234px;
 	height: 53px;
