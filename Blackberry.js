@@ -11,8 +11,9 @@ function glazingInput(event) {
     var glazing = localStorage.getItem ('glazing');
     var quantity = localStorage.getItem ('quantity');
     if (glazing != 'Glazing' && quantity != 'Quantity') {
+        // console.log (document.getElementById('Add_Basket'));
         var addToBasket = document.getElementById ('Add_Basket');
-        addToBasket.style.color = 'rgb(255,255,255';
+        addToBasket.style.color = 'rgb(255,255,255)';
 }}
 
 function quantityInput(event) {
@@ -20,8 +21,9 @@ function quantityInput(event) {
     var glazing = localStorage.getItem ('glazing');
     var quantity = localStorage.getItem ('quantity');
     if (glazing != 'Glazing' && quantity != 'Quantity') {
+        // console.log (document.getElementById('Add_Basket'));
         var addToBasket = document.getElementById ('Add_Basket');
-        addToBasket.style.color = 'rgb(255,255,255';
+        addToBasket.style.color = 'rgb(255,255,255)';
 }}
 
  function addToBasket_Hover() {

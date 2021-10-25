@@ -13,7 +13,7 @@ function original_glazingInput(event) {
     var quantity = localStorage.getItem ('Original_quantity');
     if (glazing != 'Glazing' && quantity != 'Quantity') {
         var addToBasket = document.getElementById ('Original_Add_Basket');
-        addToBasket.style.color = 'rgb(255,255,255';
+        addToBasket.style.color = 'rgb(255,255,255)';
 }}
 
 //Check Glazing and Quantity before turning Add To Basket - White
@@ -23,7 +23,7 @@ function original_quantityInput(event) {
     var quantity = localStorage.getItem ('Original_quantity');
     if (glazing != 'Glazing' && quantity != 'Quantity') {
         var addToBasket = document.getElementById ('Original_Add_Basket');
-        addToBasket.style.color = 'rgb(255,255,255';
+        addToBasket.style.color = 'rgb(255,255,255)';
 }}
 
 //Check Glazing and Quantity before OnHover Add To Basket - Drop Shadow

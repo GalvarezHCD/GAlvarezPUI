@@ -13,7 +13,7 @@ function walnut_glazingInput(event) {
     var quantity = localStorage.getItem ('Walnut_quantity');
     if (glazing != 'Glazing' && quantity != 'Quantity') {
         var addToBasket = document.getElementById ('Walnut_Add_Basket');
-        addToBasket.style.color = 'rgb(255,255,255';
+        addToBasket.style.color = 'rgb(255,255,255)';
 }}
 
 //Check Glazing and Quantity before turning Add To Basket - White
@@ -23,7 +23,7 @@ function walnut_quantityInput(event) {
     var quantity = localStorage.getItem ('Walnut_quantity');
     if (glazing != 'Glazing' && quantity != 'Quantity') {
         var addToBasket = document.getElementById ('Walnut_Add_Basket');
-        addToBasket.style.color = 'rgb(255,255,255';
+        addToBasket.style.color = 'rgb(255,255,255)';
 }}
 
 //Check Glazing and Quantity before OnHover Add To Basket - Drop Shadow
