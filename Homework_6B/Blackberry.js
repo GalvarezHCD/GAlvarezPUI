@@ -22,7 +22,7 @@ setTotalNum()
    var count = 0;
    for (var element of cart) {
     var bubble=`<div id=${count} class="productBubble_Shopping_Cart">
-    <img id="Remove_Icon_Shopping_Cart" src="Remove_Icon.png" onclick="remove(${count})">
+    <img id="Remove_Icon_Shopping_Cart" src="Remove_Icon.png" onclick="remove(event)">
     <svg class="bubble_Shopping_Cart">
         <rect id="Rectangle_4" rx="30" ry="30" x="0" y="0" width="665" height="178">
         </rect>
@@ -45,8 +45,8 @@ setTotalNum()
 }
 
 
-function remove(id){
-    console.log(document.getElementById(id))
+function remove(event){
+    let id = event.target.parentNode.id
     document.getElementById(id).remove();
     console.log(Number(id))
     var cart_original = JSON.parse(localStorage.getItem("cart"));
@@ -55,7 +55,14 @@ function remove(id){
     calcPrice(cart_update)
     localStorage.setItem("cart",JSON.stringify(cart_update));
     setTotalNum();
-
+    var bubbles = document.getElementsByClassName("productBubble_Shopping_Cart")
+    console.log("pre", bubbles)
+    let count = 0;
+    for (let bubble of bubbles) {
+        bubble.id = count;
+        count += 1;
+    }
+    console.log("post", bubbles)
 }
 
 function calcPrice(cart) {
