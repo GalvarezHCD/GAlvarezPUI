@@ -152,7 +152,6 @@ body {
 	overflow: scroll;
 }
 
-/* hey, look at this nice comma */
 #Heading, #Caramel_Heading, #Original_Heading, #Original_GF_Heading, #Pumpkin_Heading, #Walnut_Heading {
 	position: absolute;
 	width: 808px;
@@ -447,7 +446,7 @@ body {
 	float: right;
 }
 
-#Glazing, #Caramel_Glazing, #Original_Glazing, #Original_GF_Glazing, #Pumpkin_Glazing, #Walnut_Glazing {
+#Blackberry_Glazing, #Caramel_Glazing, #Original_Glazing, #OriginalGF_Glazing, #Pumpkin_Glazing, #Walnut_Glazing {
 	position: absolute;
 	width: 508px;
 	height: 53px;
@@ -467,7 +466,7 @@ body {
 	border-radius:10px;
 }
 
-#Quantity, #Caramel_Quantity, #Original_Quantity, #Original_GF_Quantity, #Pumpkin_Quantity, #Walnut_Quantity {
+#Blackberry_Quantity, #Caramel_Quantity, #Original_Quantity, #OriginalGF_Quantity, #Pumpkin_Quantity, #Walnut_Quantity {
 	position: absolute;
 	width: 508px;
 	height: 53px;
@@ -487,7 +486,7 @@ body {
 	border-radius:10px;
 }
 
-#Add_Basket, #Caramel_Add_Basket, #Original_Add_Basket, #Original_GF_Add_Basket, #Pumpkin_Add_Basket, #Walnut_Add_Basket {
+#Blackberry_Add_Basket, #Caramel_Add_Basket, #Original_Add_Basket, #OriginalGF_Add_Basket, #Pumpkin_Add_Basket, #Walnut_Add_Basket {
 	position: absolute;
 	width: 234px;
 	height: 53px;
@@ -510,6 +509,16 @@ body {
 
 
 /* ITEM BUBBLE */
+#Bubble_Image {
+	filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
+	position: absolute;
+	width: 145px;
+	height: 138px;
+	left: 20px;
+	top: 120px;
+	overflow: visible;
+}
+
 #productBubble {
 	display: none;
 	position: sticky;
@@ -540,11 +549,11 @@ body {
 }
 
 #bubbleText {
-	left: 20px;
-	top: 117px;
+	left: 178px;
+	top: 118px;
 	position: absolute;
 	overflow: visible;
-	width: 429px;
+	width: 430px;
 	height: 138px;
 	line-height: 34px;
 	margin-top: -2px;
@@ -554,5 +563,122 @@ body {
 	font-weight: normal;
 	font-size: 30px;
 	color: rgba(178,18,178,1);
+}
+
+#Remove_Icon {
+	left: -55px;
+	top: 94px;
+	position: absolute;
+	overflow: visible;
+	width: 40px;
+	height: 40px;
+	line-height: 34px;
+	margin-top: -2px;
+	text-align: right;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 30px;
+	color: rgba(255,206,25,1);
+	background-color:transparent;
+}
+/* ITEM BUBBLE */
+
+
+
+/* ITEM BUBBLE SHOPPING CART */
+#Bubble_Image_Shopping_Cart {
+	filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
+	position: absolute;
+	width: 145px;
+	height: 138px;
+	left: 20px;
+	top: 20px;
+	overflow: visible;
+}
+
+.productBubble_Shopping_Cart {
+	position: relative;
+	width: 711px;
+	height: 178px;
+	left: 836px;
+	top: 115px;
+	overflow: visible;
+	margin-bottom: 40px;
+}
+
+.bubble_Shopping_Cart {
+	position: absolute;
+	width: 665px;
+	height: 178px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+
+#Rectangle_4 {
+	fill:  rgba(254,250,233);
+	stroke: rgba(255,206,24,1);
+	stroke-width: 10px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+
+#bubbleText_Shopping_Cart {
+	left: 182px;
+	top: 20px;
+	position: absolute;
+	overflow: visible;
+	width: 665px;
+	height: 178px;
+	line-height: 34px;
+	margin-top: -2px;
+	text-align: left;
+	font-family: Lato;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 30px;
+	color: rgba(178,18,178,1);
+}
+
+#Remove_Icon_Shopping_Cart {
+	left: -55px;
+	top: -2px;
+	position: absolute;
+	overflow: visible;
+	width: 40px;
+	height: 40px;
+	line-height: 34px;
+	margin-top: -2px;
+	text-align: right;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 30px;
+	color: rgba(255,206,25,1);
+	background-color:transparent;
+}
+
+#SubTotal {
+	left: 550px;
+	top: 122px;
+	position: absolute;
+	overflow: visible;
+	width: 106px;
+	height: 36px;
+	line-height: 34px;
+	margin-top: -2px;
+	text-align: left;
+	font-family: Lato;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 30px;
+	color: rgba(255,206,25,1);
+	text-decoration: underline;
+}
+
+.Scroll_Page {
+	height: 93vh;
+	overflow: scroll;
 }
 /* ITEM BUBBLE */
