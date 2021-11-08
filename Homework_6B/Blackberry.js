@@ -7,7 +7,10 @@ function onLoad() {
         cart = JSON.stringify(cart);
         localStorage.setItem('cart', cart);
     }
-    else setTotalNum();
+    else {
+        setTotalNum();
+        calcPrice(JSON.parse(localStorage.getItem("cart")))
+    }
 }
 
 
@@ -45,9 +48,23 @@ setTotalNum()
 function remove(id){
     console.log(document.getElementById(id))
     document.getElementById(id).remove();
+    console.log(Number(id))
     var cart_original = JSON.parse(localStorage.getItem("cart"));
-    var cart_update = cart_original.splice(Number (id), 1);
+    cart_original.splice(Number(id), 1);
+    var cart_update = cart_original;
+    calcPrice(cart_update)
     localStorage.setItem("cart",JSON.stringify(cart_update));
+    setTotalNum();
+
+}
+
+function calcPrice(cart) {
+    var totalPrice = 0;
+    for (let elem of cart) {
+
+        totalPrice += Number(elem.price.replace("$","")) * Number(elem.quantity)
+    }
+    document.getElementById("Amount").innerHTML = "$" + totalPrice.toFixed(2);
 }
 
 
@@ -99,6 +116,7 @@ function addToBasket(cinnabon, price) {
         var item = {"name": cinnabon, "price": price, "glazing": localStorage.getItem('glazing'), "quantity": localStorage.getItem('quantity')}
         var cart = JSON.parse(localStorage.getItem('cart'));
         cart.push(item);
+        calcPrice(cart)
         cart = JSON.stringify(cart);
         localStorage.setItem('cart', cart);
         document.getElementById("Name").innerHTML = cinnabon;
